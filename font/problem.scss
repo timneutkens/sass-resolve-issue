@@ -1,0 +1,13 @@
+@font-face {
+  font-display: block;
+  font-family: "bootstrap-icons";
+  // This url() is resolved relative to the file that imports this file, instead of the current file.
+  // I.e. if `assets/font.scss` imports it you need to use url("../font/fonts/bootstrap-icons.woff2")
+  // The correct value would be url("./fonts/bootstrap-icons.woff2")
+
+  // INCORRECT:
+  src: url("../font/fonts/bootstrap-icons.woff2") format("woff2");
+
+  // CORRECT:
+  // src: url("./fonts/bootstrap-icons.woff2") format("woff2");
+}
